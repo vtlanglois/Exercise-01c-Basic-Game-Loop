@@ -35,5 +35,5 @@ while True:
         break
     # Find passage (update)
     current_location = {}
-    # Display passage
+    # Display passage (render the world)
     # Ask for response (get input)
