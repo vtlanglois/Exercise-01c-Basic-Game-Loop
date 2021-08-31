@@ -1,6 +1,8 @@
 # Exercise-01c-Basic-Game-Loop
 Exercise for MSCH-C220, 31 August 2021
 
+A demonstration of this exercise is available at [https://youtu.be/2HulLdM7xPw](https://youtu.be/2HulLdM7xPw)
+
 This exercise will give you our first taste of solving a problem using programming. You will be implementing a basic game loop.
 
 Begin by Forking this repository. Check that it has been forked successfully; the repository should now read [your username]/Exercise-01c-Basic-Game-Loop
