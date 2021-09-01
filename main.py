@@ -35,5 +35,23 @@ while True:
         break
     # Find passage (update)
     current_location = {}
+    # Go thru all passages, find neccessary passage
+    for passage in world["passages"]:
+      if passage["name"] == current:
+        current_location = passage
+        break
     # Display passage (render the world)
+    print("\n" + current_location["name"] + " - " + current_location["cleanText"])
+    # Print all passage links
+    for link in current_location["links"]:
+      print("\n" + link["linkText"] + " - " + link["passageName"])
     # Ask for response (get input)
+    response = input("\nWhere do you want to go? ")
+    # Check if passage link exists in current passage; else redo loop
+    for link in current_location["links"]:
+      if(response == link["linkText"]):
+        current = link["passageName"]
+        break
+    else:
+      print("Option not found")
+
